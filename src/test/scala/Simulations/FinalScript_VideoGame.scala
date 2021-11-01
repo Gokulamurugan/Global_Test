@@ -5,6 +5,11 @@ import io.gatling.core.Predef._
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import scala.concurrent.duration._
+import scala.util.Random
+
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.Random
 import scala.concurrent.duration.DurationInt
 import scala.util.Random.javaRandomToRandom
@@ -93,7 +98,7 @@ class FinalScript_VideoGame extends Simulation{
     ).protocols(httpconf.inferHtmlResources())
       .maxDuration(testDuration seconds)
       .assertions(
-        global.responseTime.max.lt(threshold = 700),
+        global.responseTime.max.lt(threshold = 700)
       )
   )
 }
