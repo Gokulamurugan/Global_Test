@@ -6,7 +6,6 @@ import io.gatling.core.Predef._
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import scala.concurrent.duration._
-import scala.util.Random
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
