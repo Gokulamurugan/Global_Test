@@ -97,8 +97,8 @@ class FinalScript_VideoGame extends Simulation{
     )
       .protocols(httpconf)
 //      .maxDuration(testDuration.seconds)
-      .assertions(
-        global.responseTime.max.lt(threshold = 700)
-      )
+//      .assertions(
+//        global.responseTime.max.lt(threshold = 700)
+//      )
   )
 }
