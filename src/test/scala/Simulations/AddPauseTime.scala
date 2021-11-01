@@ -14,7 +14,7 @@ class AddPauseTime extends Simulation {
   val scn = scenario("VideoGame 3 API with Pause Time")
     .exec(http("Get all games")
       .get("videogames"))
-    .pause(duration = 11)
+    .pause(duration = 23)
 
     .exec(http("Get specific game")
       .get("videogames/1"))
