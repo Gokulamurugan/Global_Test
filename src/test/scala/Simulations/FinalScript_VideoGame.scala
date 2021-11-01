@@ -96,9 +96,9 @@ class FinalScript_VideoGame extends Simulation{
       rampUsers(10) during (10.seconds)
     )
       .protocols(httpconf)
-      .maxDuration(testDuration.seconds)
-//      .assertions(
-//        global.responseTime.max.lt(threshold = 700)
-//      )
+//      .maxDuration(testDuration.seconds)
+      .assertions(
+        global.responseTime.max.lt(threshold = 700)
+      )
   )
 }
