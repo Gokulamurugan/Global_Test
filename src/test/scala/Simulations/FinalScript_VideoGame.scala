@@ -79,7 +79,7 @@ class FinalScript_VideoGame extends Simulation{
     startDate.minusDays(random.nextInt(30)).format(pattern)
   }
 //Scenario design
-  val scn = scenario("Final Test with Get,POST & Delete API's")
+  val scn = scenario("Final Test with Get,POST & Delete API's in Jenkins")
     .exec(getAllVideoGames())
     .exec(createNewGame())
     .exec(getSpecificVideoGame())
