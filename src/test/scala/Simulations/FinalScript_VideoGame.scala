@@ -90,6 +90,10 @@ class FinalScript_VideoGame extends Simulation{
       nothingFor(5.seconds),
       atOnceUsers(5),
       rampUsers(10) during (10.seconds)
-    ).protocols(httpconf.inferHtmlResources()),
+    ).protocols(httpconf.inferHtmlResources())
+      .maxDuration(testDuration seconds)
+      .assertions(
+        global.responseTime.max.lt(threshold = 2),
+      )
   )
 }
