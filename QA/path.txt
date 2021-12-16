@@ -18,7 +18,6 @@ Addcart_path<>(//div[@class='inventory_item_price'])[VL^]//following-sibling::bu
 Basket_path<>//a[@class='shopping_cart_link']
 Checkout_path<>//button[@id='checkout']
 Firstname_path<>//input[@id='first-name']
-
 Lastname_path<>//input[@id='last-name']
 Zipcode_path<>//input[@id='postal-code']
 Continue_path<>//input[@id='continue']
